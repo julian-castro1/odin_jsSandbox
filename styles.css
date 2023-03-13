@@ -1,3 +1,24 @@
-h1{
-    background-color: green;
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.input{
+    display: flex;
+    gap: 10px;
+}
+button{
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: rgb(91, 116, 55);
+    color: antiquewhite;
+}
+label{
+    padding: 20px;
+    width: 200px;
+    color: rgb(194, 194, 194);
+    border: 2px solid green;
+    border-radius: 30px;
+    background-color: rgb(224, 224, 224);
 }
