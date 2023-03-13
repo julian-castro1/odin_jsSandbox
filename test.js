@@ -7,17 +7,18 @@ function onclick(){
     playRound();
 }
 function won(str){
+    var outField = document.getElementById("out");
     console.log(name + " mightve won");
-    var name = document.getElementById('player');
+    var name = document.getElementById('player').value;
     switch(str){
-        case 't': outField.textContent = "Tie!";
-        case 'p': outField.textContent = name + " wins!";
-        case 'c': outField.textContent = "Computer wins!";
+        case 't': outField.textContent = "Tie!"; break;
+        case 'p': outField.textContent = name + " wins!"; break;
+        case 'c': outField.textContent = "Computer wins!"; break;
     }
 }
 function playRound(playerSelect){
     var compOptions = ['paper','rock','scissors'];
-    var perChoice = document.getElementById('selection');
+    var perChoice = document.getElementById('selection').value;
     var compChoice = compOptions[Math.floor(Math.random() * compOptions.length)];
 
     if(perChoice == compChoice){
