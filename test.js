@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var outField = document.getElementById("out");
   var but = document.querySelector("button");
   but.addEventListener("click", onclick)
+  var inputs = document.querySelectorAll('input');
 });
 function onclick(){
     playRound();
 }
+
 function won(str){
     var outField = document.getElementById("out");
     console.log(name + " mightve won");
@@ -35,6 +37,7 @@ function playRound(playerSelect){
           case "scissors":
             compChoice == "rock" ? won("c") : won("p");
             break;
+          default: document.getElementById("out").textContent = "Invalid Selection!"
         }
     }
 }
