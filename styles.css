@@ -1,24 +1,92 @@
 body{
+    background-color: #d9d9d9;
+}
+.main{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
-}
-.input{
-    display: flex;
-    gap: 10px;
-}
-button{
-    max-width: 300px;
-    border-radius: 10px;
-    background-color: rgb(91, 116, 55);
-    color: antiquewhite;
+    gap: 100px;
+    padding: 120px;
 }
 label{
-    padding: 20px;
-    width: 200px;
-    color: rgb(194, 194, 194);
-    border: 2px solid green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: white;
+}
+button{
+    min-width: 250px;
+    min-height: 60px;
+    border: 0px solid white;
     border-radius: 30px;
-    background-color: rgb(224, 224, 224);
+    background-color: #b8b8b8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: rgb(231, 231, 231);
+}
+.name{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#flex1{
+    display: flex;
+    gap: 30px;
+
+    font-size: 70px;
+}
+#flex2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+#playInterface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#compInterface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#go{
+    background-color: #a5dfb1;
+    font-weight: 900;
+    min-width: 150px;
+    color: white;
+}
+#compRes{
+    background-color: #b8b8b8;
+    min-height: 200px;
+    min-width: 250px;
+    font-size: 50px;
+    border-radius: 30px;
+    line-height: 200px;
+    text-align: center;
+}
+#vs{
+    font-size: 50px;
+    font-weight: 100;
+    padding-top: 63px;
+}
+#screenLeft{
+            position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                background-color: #d9d9d9;
+                z-index: -1;
+}
+#screenRight {
+    position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background-color: #d9d9d9;
+        z-index: -1;
 }
